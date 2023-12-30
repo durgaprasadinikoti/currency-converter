@@ -1,0 +1,15 @@
+.hero-head {
+    color: #fff;
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    font-size: 3rem;
+}
+
+.hero-head-span {
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    color: #8afadc;
+}

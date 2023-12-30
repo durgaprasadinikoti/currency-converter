@@ -1,0 +1,18 @@
+.label-container {
+    margin: 10px;
+}
+
+.label-text {
+    position: absolute;
+    padding: 20px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.fieldContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: space-around;
+    gap: 3rem;
+}

@@ -1,0 +1,102 @@
+/*!**************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/app/components/InputWrapper.module.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************/
+.InputWrapper_conatiner__zNyl1 {
+    margin: 20px;
+    padding: 7px;
+    width: 484px;
+    height: 80px;
+    border: 1px solid #666666;
+    --tw-bg-opacity: 1;
+    background-color: rgb(11 15 28/var(--tw-bg-opacity));
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/app/components/SelectBox.module.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************/
+.SelectBox_container__7nKYD {
+    margin: 20px;
+
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/app/components/Button.module.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************/
+.Button_submit-btn__Ppjtp {
+    padding: 20px;
+    align-items: center;
+    background: #44b496;
+    border-radius: 6px;
+    color: #000238;
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.Button_w-full__oIdoS {
+    width: 100%;
+    padding: 20px;
+}
+/*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/app/components/ConverterForm.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************/
+.ConverterForm_label-container__O1oAV {
+    margin: 10px;
+}
+
+.ConverterForm_label-text__ga_9e {
+    position: absolute;
+    padding: 20px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.ConverterForm_fieldContainer__qmAiT {
+    display: flex;
+    justify-content: space-around;
+    align-items: space-around;
+    gap: 3rem;
+}
+/*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/app/components/Title.module.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************/
+.Title_hero-head__c869z {
+    color: #fff;
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    font-size: 3rem;
+}
+
+.Title_hero-head-span__1yhu3 {
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    color: #8afadc;
+}
+/*!******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/app/components/Card.module.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************/
+
+.Card_conatiner__svXg6 { 
+    width: 550px;
+    height: 300px;
+    border: 1px solid #1a2130;
+    background-color: #1a2130;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
