@@ -8,6 +8,7 @@ import CurrencySelectBox from "./CurrencySelectBox";
 import Button from "./Button";
 
 const ConverterForm = () => {
+  const vercelToken = "prj_6w4DCMGn5lreKD7ewDb78WwAA4vY";
   const [selectedCryptoCurrncy, setSelectedCryptoCurrncy] = useState();
   const [cryptoCurrncies, setCryptoCurrncies] = useState([]);
   const [amount, setAmount] = useState(1);
@@ -23,7 +24,14 @@ const ConverterForm = () => {
   const fetchCryptoCurrencies = async () => {
     try {
       const response = await fetch(
-        "https://currency-converter-backend-5bdif1032.vercel.app/api/getCryptoCurrencies"
+        "https://currency-converter-backend-eight.vercel.app/api/getCryptoCurrencies",
+        {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: "Bearer " + vercelToken,
+          },
+        }
       );
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
@@ -57,22 +65,21 @@ const ConverterForm = () => {
     setTargetCurrencyList(supportedCurrenciesList[0].supportedCurrencies);
 
     const postData = {
-        cryptoSymbol: value,
-        fiatCurrency: supportedCurrenciesList[0].supportedCurrencies[0],
-        amount: Number(amount),
-      };
-      fetchConvertedAmountValue(postData);
+      cryptoSymbol: value,
+      fiatCurrency: supportedCurrenciesList[0].supportedCurrencies[0],
+      amount: Number(amount),
+    };
+    fetchConvertedAmountValue(postData);
   };
 
   const handleCurrencyChange = (value) => {
     const postData = {
-        cryptoSymbol: selectedCryptoCurrncy,
-        fiatCurrency: value,
-        amount: Number(amount),
-      };
-      fetchConvertedAmountValue(postData);
-
-  }
+      cryptoSymbol: selectedCryptoCurrncy,
+      fiatCurrency: value,
+      amount: Number(amount),
+    };
+    fetchConvertedAmountValue(postData);
+  };
 
   const handleAmountChange = (value) => {
     if (/^\d+$/.test(value) || value === "") {
@@ -90,11 +97,12 @@ const ConverterForm = () => {
   const fetchConvertedAmountValue = async (postData) => {
     try {
       const response = await fetch(
-        "https://currency-converter-backend-5bdif1032.vercel.app/api/getCryptoConverterAmount",
+        "https://currency-converter-backend-eight.vercel.app/api/getCryptoConverterAmount",
         {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
+            Authorization: "Bearer " + vercelToken,
           },
           body: JSON.stringify(postData),
         }
@@ -128,7 +136,10 @@ const ConverterForm = () => {
       <InputWrapper>
         <div className={styles["fieldContainer"]}>
           <InputField value={convertedAmount} disabled />
-          <CurrencySelectBox data={targetCurrencyList} onSelect={handleCurrencyChange} />
+          <CurrencySelectBox
+            data={targetCurrencyList}
+            onSelect={handleCurrencyChange}
+          />
         </div>
       </InputWrapper>
 
