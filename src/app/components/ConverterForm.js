@@ -4,7 +4,7 @@ import InputWrapper from "./InputWrapper";
 import styles from "./ConverterForm.module.css";
 import CryptoCurrencySelectBox from "./CryptoCurrencySelectBox";
 import InputField from "./InputField";
-import CurrencySelectBox from "./currencySelectBox";
+import CurrencySelectBox from "./CurrencySelectBox";
 import Button from "./Button";
 
 const ConverterForm = () => {
@@ -23,7 +23,7 @@ const ConverterForm = () => {
   const fetchCryptoCurrencies = async () => {
     try {
       const response = await fetch(
-        "http://localhost:3001/api/getCryptoCurrencies"
+        "https://currency-converter-backend-5bdif1032.vercel.app/api/getCryptoCurrencies"
       );
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
@@ -90,7 +90,7 @@ const ConverterForm = () => {
   const fetchConvertedAmountValue = async (postData) => {
     try {
       const response = await fetch(
-        "http://localhost:3001/api/getCryptoConverterAmount",
+        "https://currency-converter-backend-5bdif1032.vercel.app/api/getCryptoConverterAmount",
         {
           method: "POST",
           headers: {
